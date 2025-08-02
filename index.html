@@ -4302,16 +4302,7 @@
                 return;
             }
 
-            if (!validateNationalId(nationalId)) {
-                resultDiv.innerHTML = `
-                    <div class="result-card result-error">
-                        <div class="result-name">❌ کد ملی نامعتبر</div>
-                        <div class="result-label">لطفاً کد ملی 10 رقمی معتبر وارد کنید</div>
-                    </div>
-                `;
-                return;
-            }
-
+           
             const student = studentsData.find(s => s.nationalId === nationalId);
 
             if (student) {
